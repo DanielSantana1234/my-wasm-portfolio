@@ -1,0 +1,32 @@
+<!-- public/index.html -->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio</title>
+        <!-- Link to the css file -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Tailwind css for styling? -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+       <div class="bg-gray-800 p-8 rounded-x1 shadow-lg text-center">
+        <h1 class="text-4x1 font-bold mb-4 text-blue-300">Welcome to my portfolio!</h1>
+        <p class="text-lg mb-6">
+            Hello! My name is Daniel Santana and I am a computer engineering
+            graduate with experience and interests in embedded systems, graphics programming, 
+            game development, and deep learning.
+        </p>
+        <button id="renderButton" class=""bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+            Render Fractal
+        </button>
+        <div id="loadingMessage" class="loading-message mt-4 text-sm text-gray-400 hidden">Loading wasm file</div>
+        <canvas id="fractalCanvas" class="mt-6 border-2 border-blue-500 rounded-lg shadow-inner bg-black"></canvas>
+
+        <script src="js/mandlebrot.js"></script>
+
+        <script src="js/main.js"></script>
+       </div> 
+    </body>
+ </html>
