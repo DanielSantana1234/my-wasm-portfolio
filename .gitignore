@@ -1,0 +1,23 @@
+# Build artifacts 
+*.wasm
+*.js.map
+*.html.mem
+*.data
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.vcproj.*
+*.vcxproj.user
+*.vs/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Emscripten cache
+.emscripten_cache/
+
+# Editor specific
+.vscode/
+.idea/
