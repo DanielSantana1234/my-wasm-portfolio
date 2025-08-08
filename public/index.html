@@ -4,14 +4,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Portfolio</title>
+        <title>Daniel Santana Portfolio</title>
         <!-- Link to the css file -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Tailwind css for styling? -->
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
-       <div class="bg-gray-800 p-8 rounded-x1 shadow-lg text-center">
+        <div class = "topnav">
+            <a class = "active" href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+
+       <div class="shadow-lg text-center">
         <h1 class="text-4x1 font-bold mb-4 text-blue-300">Welcome to my portfolio!</h1>
         <p class="text-lg mb-6">
             Hello! My name is Daniel Santana and I am a computer engineering
@@ -28,5 +35,10 @@
 
         <script src="js/main.js"></script>
        </div> 
+       <style>
+        body {
+            background-image: url('NASA.jpg');
+        }
+       </style>
     </body>
  </html>
